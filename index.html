@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+</head>
+<body>
+  <h1>Weather App</h1>
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button id="getWeatherBtn">Get Weather</button>
+
+  <div id="weatherResult"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #333;
+    text-align: center;
+    padding: 50px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  #cityInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  #getWeatherBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px #388e3c;
+  }
+
+  #getWeatherBtn:active {
+    box-shadow: 0 2px #388e3c;
+    transform: translateY(2px);
+  }
+
+  #weatherResult {
+    margin-top: 40px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 300px;
+  }
+</style>
+<footer style="margin-top: 50px; font-size: 14px; color: #555;">
+  Made with ❤️ by Cooler 01
+</footer>
